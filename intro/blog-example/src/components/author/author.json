@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_author_authors",
+  "info": {
+    "displayName": "Author",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "Firstname": {
+      "type": "string"
+    },
+    "Lastname": {
+      "type": "string"
+    }
+  }
+}

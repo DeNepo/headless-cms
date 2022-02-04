@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    <style>
+      body {
+        background-color: rgb(74, 80, 187)
+      }
+
+      #articles{
+        max-width: 800px;
+        padding: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgb(248, 249, 252);
+      }
+
+      .author{
+        color: #807d7d;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="articles">
+
+    </div>
+  </body>
+  <script>
+    async function loadArticles() {
+      const response = await fetch('/api/blogposts?populate=*');
+      const articles = (await response.json()).data;
+      const articlesContainer = document.getElementById('articles');
+      articlesContainer.innerHTML = "";
+      const converter = new showdown.Converter();;
+      articles.reverse().forEach(a => {
+        const el = document.createElement('div');
+        el.className = "article";
+        el.innerHTML = `
+        <h1> ${a.attributes.Title} </h1>
+        <div class="author">by ${a.attributes.Author.Firstname} ${a.attributes.Author.Lastname}</div>
+        <div class="article-body">
+          ${converter.makeHtml(a.attributes.Body)}
+        </div>
+        <hr>
+        `;
+        articlesContainer.append(el);
+      });
+    }
+    loadArticles();
+  </script>
+</html>
