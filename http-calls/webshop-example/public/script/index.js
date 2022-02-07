@@ -20,13 +20,13 @@ async function createItemElement(itemData) {
       const discountAmount = itemData.discount.data.attributes.percentage;
       priceEl.innerHTML = `
             <div class="discount">${discountAmount}%</div>
-            <div class="oldPrice">${itemData.price}€</div>
-            <div class="newPrice">${Math.round(itemData.price * (1 - (discountAmount/100)), 2)}€</div>
+            <div class="oldPrice">${itemData.price.toFixed(2)}€</div>
+            <div class="newPrice">${(itemData.price * (1 - (discountAmount/100))).toFixed(2)}€</div>
       `;
     }else {
       const newPrice = document.createElement("div");
       newPrice.className = "newPrice";
-      newPrice.innerText = itemData.price + "€";
+      newPrice.innerText = itemData.price.toFixed(2) + "€";
       priceEl.appendChild(newPrice);
     }
   } 
