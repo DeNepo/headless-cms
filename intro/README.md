@@ -5,6 +5,7 @@ A CMS, or Content Management System, is an application that allows a company to 
 To see it in action we prepared an example for you in the blog-example directory. Open a terminal in the directory and start the server by executing the following command:
 
 ```
+npm install
 npm run start
 ```
 

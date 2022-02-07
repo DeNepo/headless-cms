@@ -1,0 +1,20 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>680</x><y>260</y><w>120</w><h>70</h></coordinates><panel_attributes>Discount
+--
+name: Text
+percentage: Number</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>60</x><y>250</y><w>210</w><h>90</h></coordinates><panel_attributes>Category
+--
+name: Text
+description: Text
+products: Relation</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>368</x><y>200</y><w>210</w><h>140</h></coordinates><panel_attributes>Product
+--
+name: Text
+description: Text
+price: Number
+discount: Relation
+image: Media
+category: Relation
+outOfStock: Boolean</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>267</x><y>300</y><w>120</w><h>40</h></coordinates><panel_attributes>lt=&lt;-&gt;
+m1=0..n
+m2=1</panel_attributes><additional_attributes>100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>567</x><y>270</y><w>130</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+m1=0..1
+m2=0..n</panel_attributes><additional_attributes>110;10;10;10</additional_attributes></element></diagram>

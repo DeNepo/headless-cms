@@ -23,7 +23,7 @@ Testuser1 as password
 - 🐣 Extend and adapt an existing CMS configuration
 - 🐣 Perform a http call with filtering via Postman
 - 🐣 Perform a http call with "include" via Postman
-- 🐣 Configuring endpoint permissions
+- 🐣 Configuring endpoint permissions (Authentication vs Authorization)
 - 🐥 Design a data model from scratch based on user requirements
 
 ## Materials
@@ -44,3 +44,9 @@ In this chapter we are going to take a look at how to set up endpoints and retri
 
 ### Chapter 3 - Data Model Design
 In this chapter we will put ourselves in the role of analyst and set out to design the data model required to fulfill the client's needs.
+
+### Chapter 4 - Authentication vs Authorization
+In this chapter we will take a look at the difference between Authentication and Authorization. We will see how you can secure your endpoints by using role based user accounts.
+
+## Deliverables 
+Throughout this module you will choose one of the cases you analysed during Chapter 3 and design and implement the model in Strapi. You will also build a minimal frontend application that connects to your CMS and that uses proper authentication to access certain routes.
