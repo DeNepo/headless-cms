@@ -4,7 +4,7 @@ In the webshop-example folder you can find an example of a webshop built using S
 
 ```
 npm install
-npm run start
+npm run develop
 ```
 If you open up the website in your browser (http://localhost:1337) you should be greeted by a webpage displaying all items that are in the store grouped by category. Some of the items are currently on sale, for those items a discount is applied. If an item is sold out it is possible for the owner to mark the item as out of stock. If this happens the price is hidden and instead the message "out of stock" is shown.
 
