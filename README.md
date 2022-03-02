@@ -23,6 +23,8 @@ Testuser1 as password
 - 🐣 Extend and adapt an existing CMS configuration
 - 🐣 Perform a http call with filtering via Postman
 - 🐣 Perform a http call with "include" via Postman
+- 🐣 Perform a http POST call to create new data
+- 🐣 Perform a http PUT call to update existing data
 - 🐣 Configuring endpoint permissions (Authentication vs Authorization)
 - 🐥 Design a data model from scratch based on user requirements
 

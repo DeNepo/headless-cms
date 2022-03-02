@@ -1,0 +1,9 @@
+{
+  "study": {
+    "run": true,
+    "save": true,
+    "highlight": true,
+    "type": "module",
+    "environment": true
+  }
+}
