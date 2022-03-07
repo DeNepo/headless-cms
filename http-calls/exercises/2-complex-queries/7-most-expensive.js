@@ -1,7 +1,7 @@
 /**
  * Fill in the blanks to create a script 
  * that prints the name of the most expensive item that someone can buy (after applying any discounts,
- * and not counting any items that are out of stock)
+ * and not including any items that are out of stock)
  */
 
  import "./qs.js";
