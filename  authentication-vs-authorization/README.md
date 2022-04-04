@@ -42,7 +42,7 @@ async function createAuthenticatedUser (username,email,password ) {
     },
     body: JSON.stringify(body) 
   });
-  return response.json();  //Jwt that can be used to send authenticated request (Token)
+  return response.json();  //You will have to store this JWT in your application, it's important because you will have to use it the next requests
 }
 
 createAuthenticatedUser ("username","email","password" );
@@ -61,7 +61,7 @@ const body = {
 
 };
 
-const token = 'YOUR_TOKEN_HERE';
+const token = 'YOUR_TOKEN_HERE';  // JWT 
 
 
   const url = `http://localhost:1337/api/${path}`
