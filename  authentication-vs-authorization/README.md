@@ -24,3 +24,57 @@ For more [Authorization methods](https://auth0.com/docs/get-started/architecture
 
 [The basics of authentication in the Strapi](https://www.youtube.com/watch?v=vcopLqUq594&&t=4336s)
 
+### Create authenticated User snippet
+
+````
+async function createAuthenticatedUser (username,email,password ) {
+  const path = "auth/local/register";   //a default route from strapi 
+  const body = {
+      "username": username 
+      "email": email,
+      "password": password
+  }; 
+  const url = `http://localhost:1337/api/${path}`
+  const response = await fetch(url, {
+    method:POST, 
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body) 
+  });
+  return response.json();  //Jwt that can be used to send authenticated request (Token)
+}
+
+createAuthenticatedUser ("username","email","password" );
+````
+
+
+### Create authenticated new product snippet 
+
+````
+async function AuthcreateNewproduct(name, description,price) {
+const path = "products";
+const body = {
+    "name": name,
+    "Description": description,
+    "price": price
+
+};
+
+const token = 'YOUR_TOKEN_HERE';
+
+
+  const url = `http://localhost:1337/api/${path}`
+  const response = await fetch(url, {
+    method: POST,
+    headers: {
+      'Content-Type': 'application/json'
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify(body)
+  });
+  return response.json();
+}
+
+createNewCategory("authorised product ", "This is a cool product made by an api call after authentication")
+````
