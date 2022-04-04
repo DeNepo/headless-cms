@@ -30,7 +30,7 @@ For more [Authorization methods](https://auth0.com/docs/get-started/architecture
 async function createAuthenticatedUser (username,email,password ) {
   const path = "auth/local/register";   //a default route from strapi 
   const body = {
-      "username": username 
+      "username": username, 
       "email": email,
       "password": password
   }; 
@@ -68,13 +68,13 @@ const token = 'YOUR_TOKEN_HERE';  // JWT
   const response = await fetch(url, {
     method: POST,
     headers: {
-      'Content-Type': 'application/json'
-      Authorization: `Bearer ${token}`,
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`
     },
     body: JSON.stringify(body)
   });
   return response.json();
 }
 
-createNewCategory("authorised product ", "This is a cool product made by an api call after authentication")
+ AuthcreateNewproduct("authorised product ", "This is a cool product made by an api call after authentication")
 ````
