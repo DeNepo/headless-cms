@@ -66,9 +66,9 @@ Using [strapi-template-repo](https://github.com/HackYourFutureBelgium/template-s
 
 This is a group project.
 
-- Fork the the template repo to **Lab-Antwerp org**. 
+- Fork the the template repo to **Lab organization**. 
 
-- When connecting to the strapi, **one person from the team** has to create the admin name and password and share it with the rest of the team.
+- When connecting to strapi, **one person from the team** has to create the admin name and password and share it with the rest of the team.
 
 Checkout [this](https://youtu.be/h9vETeRiulY?t=39) link on how to get started with with strapi
 
