@@ -1,4 +1,4 @@
-In chapter 1 we learned what a CMS was and how it could be used to manage the content of your website. In this chapter we are going to take a look at how we can get this  information out of the system using a **Rest API**.
+In chapter 1 we learned what a CMS was and how it could be used to manage the content of your website. In this chapter we are going to take a look at how we can get this information out of the system using a **Rest API**.
 
 In the webshop-example folder you can find an example of a webshop built using Strapi. Start the project by executing the following terminal command from inside that directory.
 

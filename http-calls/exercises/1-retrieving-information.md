@@ -4,7 +4,7 @@ You can verify your solution by expanding the exercise, but please try to comple
 
 ### Basic retrieval
 ---
-To retrieve all entries for a specific collection you can make a GET api call to the "/api/\<collention-name\>" endpoint. In order to only retrieve a specific entry rather than all entries it is possible to make a get request to the "/api/\<collection-name\>/\<id\>" endpoint.
+To retrieve all entries for a specific collection you can make a GET api call to the "/api/\<collection-name\>" endpoint. In order to only retrieve a specific entry rather than all entries it is possible to make a get request to the "/api/\<collection-name\>/\<id\>" endpoint.
 <details>
   <summary>
     1. Show all categories
@@ -99,7 +99,7 @@ For example if you only want to select 2 fields of a collection you can do so by
 
 ### Sorting
 ---
-It is possible to tell Strapi to sort its response by adding a sort parameter to the query parameters (e.g. "/api/\<collention-name\>?sort=\<attribute-name\>"). To change the order of the sorting you can append :asc or :desc to the property name (e.g. "/api/\<collention-name\>?sort=\<attribute-name\>:desc"). If you ever need to sort based on multiple attributes you can do so by specifying their order using square brackets (e.g. "/api/\<collention-name\>?sort[0]=\<first-attribute-name\>:desc&sort[1]=\<second-attribute-name\>:asc").
+It is possible to tell Strapi to sort its response by adding a sort parameter to the query parameters (e.g. "/api/\<collection-name\>?sort=\<attribute-name\>"). To change the order of the sorting you can append :asc or :desc to the property name (e.g. "/api/\<collection-name\>?sort=\<attribute-name\>:desc"). If you ever need to sort based on multiple attributes you can do so by specifying their order using square brackets (e.g. "/api/\<collection-name\>?sort[0]=\<first-attribute-name\>:desc&sort[1]=\<second-attribute-name\>:asc").
 
 <details>
   <summary>
@@ -152,7 +152,7 @@ It is possible to tell Strapi to sort its response by adding a sort parameter to
 Queries can accept a filters parameter with the following syntax:
 
 ```
-GET /api/<collention-name>?filters[field][operator]=value
+GET /api/<collection-name>?filters[field][operator]=value
 ```
 
 The following operators are available

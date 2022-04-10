@@ -48,7 +48,7 @@ In this first chapter we are going to take a look at what a Content Management S
 
 ### Chapter 2 - HTTP Calls
 
-In this chapter we are going to take a look at how to set up endpoints and retrieve the data we are interested in. Starting from basic examples we will slowly work our way into more and more difficult scenarios using postman.
+In this chapter we are going to take a look at how to set up endpoints and retrieve the data we are interested in. Starting from basic examples we will slowly work our way into more and more difficult scenarios using Postman.
 
 ### Chapter 3 - Data Model Design
 
@@ -76,7 +76,7 @@ Checkout [this](https://youtu.be/h9vETeRiulY?t=39) link on how to get started wi
 - [ ] [README repository](https://github.com/_/_)
 - [ ]  live README](<https://github.com/_>)
 - I have practiced:
-  - [ ] Pulling and pushing
+  - [ ] pulling and pushing
   - [ ] formatting my code: `npm run format`
   - [ ] checking my spelling: `npm run spell-check`
   - [ ] linting my code: `npm run lint:ls` _and_ `npm run lint:md`
