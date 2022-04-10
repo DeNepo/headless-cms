@@ -8,7 +8,7 @@ Download Umlet (https://www.umlet.com/changes.htm) and design the data schema ne
   <summary>Pizzeria</summary>
   A small pizzeria in the center of Antwerp wants to offer a website for customers where they can make reservations online in order to dine in. When customers make their reservations they already have to select the pizza's they would like to eat, so the food is ready once the guests arrive. 
 <br><br>
-  Every pizza that the pizzeria makes is tailor made for the needs of the specific customer. Customers must first choose the size of the pizza (small, medium or large). A small pizza starts at 8€, a medium pizza starts at 10€ and a large one starts at 15€. Once a size has been chosen the customer has to select a dough, here the options are Pan, Classic or Cheezy Crust. Both Pan and Classic are included in the , but if the user selects a cheezy crust pizza he will have to pay a supplement of 3€.
+  Every pizza that the pizzeria makes is tailor made for the needs of the specific customer. Customers must first choose the size of the pizza (small, medium or large). A small pizza starts at 8€, a medium pizza starts at 10€ and a large one starts at 15€. Once a size has been chosen the customer has to select a dough, here the options are Pan, Classic or Cheezy Crust. Both Pan and Classic are included in the price, but if the user selects a cheezy crust pizza he will have to pay a supplement of 3€.
 <br><br>
   Once the type of dough has been decided the customer can add as many toppings as they would like to the pizza. Every topping has its own price. On the online menu card we want to show icons for toppings that are vegan. We also want to indicate how spicy a topping is. A topping can be (not spicy at all, a little spicy, medium spicy and very spicy).
 </details>
@@ -33,7 +33,7 @@ Download Umlet (https://www.umlet.com/changes.htm) and design the data schema ne
   The city of Brussels is planning the CurieuzenAir project. The goal of this project is to gather information about the air quality throughout Brussels. In order to do so, they are planning on spreading 3000 air quality measuring devices over Brussels, that will perform air measurements every 30 minutes. Such measurements contain values for the amount of fine particles (PM2.5), PM10, Nitrogen Dioxide (NO2) and Carbon monoxide (CO). 
 <br>
 <br>
-  The city of Brussels is asking you to help set up a webpage on which all the measurement devices devices can be shown based on their location (latitude and longitude pairs) as well as to save all measuements and show an overview of these measurements for a selected device. Last but not least, it should also be possible to mark a measurement device as "out of order", if this happens the broken device will be shown on the map in a different color and someone from the repair crew can go and fix the broken device. 
+  The city of Brussels is asking you to help set up a webpage on which all the measurement devices can be shown based on their location (latitude and longitude pairs) as well as to save all measurements and show an overview of these measurements for a selected device. Last but not least, it should also be possible to mark a measurement device as "out of order", if this happens the broken device will be shown on the map in a different color and someone from the repair crew can go and fix the broken device. 
 </details>
 
 <details>
@@ -50,5 +50,5 @@ Download Umlet (https://www.umlet.com/changes.htm) and design the data schema ne
 <br><br>
   Aside from the modules, the homepage should also contain a list of all students that are enrolled for that class, with their names, discord handles, and github accounts so that it is easy for the team to reach specific students.
 <br><br>
-  Last but not least, the team would also like to show a badge next to a students name for every module that the student has completed.
+  Last but not least, the team would also like to show a badge next to a students' name for every module that the student has completed.
 </details>
